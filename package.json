@@ -1,0 +1,64 @@
+{
+  "name": "immer-svelte",
+  "version": "0.1.0",
+  "description": "Use immer with Svelte",
+  "main": "dist/use-immer.js",
+  "umd:main": "dist/use-immer.umd.js",
+  "module": "dist/use-immer.module.js",
+  "react-native": "dist/use-immer.module.js",
+  "source": "src/index.js",
+  "typings": "index.d.ts",
+  "repository": "git@github.com:distolma/immer-svelte.git",
+  "homepage": "https://github.com/distolma/immer-svelte#readme",
+  "author": "Dmytro Mostovyi <djmakaron2009@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/distolma/immer-svelte/issues"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "microbundle",
+    "test": "eslint src/*.js"
+  },
+  "files": [
+    "dist/",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "immer",
+    "svelte"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "immer": ">=2.0.0",
+    "svelte": "^3.20.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "husky": "^4.2.3",
+    "jest": "^25.2.1",
+    "lint-staged": "^10.0.9",
+    "microbundle": "^0.11.0",
+    "prettier": "^2.0.2"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "prettier",
+      "prettier/@typescript-eslint"
+    ]
+  }
+}
