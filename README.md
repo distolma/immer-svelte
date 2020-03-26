@@ -1,5 +1,8 @@
 # immer-svelte
 
+[![npm version](https://badge.fury.io/js/immer-svelte.svg)](https://www.npmjs.com/package/immer-svelte)
+[![Build Status](https://travis-ci.com/distolma/immer-svelte.svg?branch=master)](https://travis-ci.com/distolma/immer-svelte)
+
 ## Installation
 
 ```sh
